@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.90000000000000002" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q3g-d0-ref" customClass="SMTextField" customModule="CustomTextField" customModuleProvider="target">
+                                <rect key="frame" x="19" y="216" width="337.5" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="wKX-dF-4Sd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="tick"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="mail"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorder" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i31-3t-Kzf" customClass="SMTextField" customModule="CustomTextField" customModuleProvider="target">
+                                <rect key="frame" x="19" y="271" width="337.5" height="35"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="tick"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="login"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorder" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q3g-d0-ref" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4bQ-7m-m7l"/>
+                            <constraint firstItem="i31-3t-Kzf" firstAttribute="height" secondItem="Q3g-d0-ref" secondAttribute="height" id="CuR-xM-hKY"/>
+                            <constraint firstItem="Q3g-d0-ref" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="JSJ-Kd-Abx"/>
+                            <constraint firstItem="Q3g-d0-ref" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="L7r-C6-5Lp"/>
+                            <constraint firstItem="i31-3t-Kzf" firstAttribute="width" secondItem="Q3g-d0-ref" secondAttribute="width" id="hcb-Pm-W6q"/>
+                            <constraint firstItem="i31-3t-Kzf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jUj-PP-bD8"/>
+                            <constraint firstItem="i31-3t-Kzf" firstAttribute="top" secondItem="Q3g-d0-ref" secondAttribute="bottom" constant="20" id="kLp-UP-5Dd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Q3g-d0-ref" id="Lt3-GE-aVM"/>
+                        <outlet property="passwordTextField" destination="i31-3t-Kzf" id="oTi-5T-lBQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login" width="30" height="30"/>
+        <image name="mail" width="30" height="30"/>
+        <image name="tick" width="30" height="30"/>
+    </resources>
+</document>
