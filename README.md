@@ -17,12 +17,12 @@ Drag and drop SMTextField.swift into your project.
 
 # Properties
 
-**rightImage** : image for the right view, add the image\'92s name in the identity inspector.
-**leftImage** : image for the left view, add the image\'92s name in the identity inspector.
-**borderColor** : the colour of the bottom border.
-**isBottomBorder** : a boolean to show or hide bottom border.
-**isLeftViewHidden** : a boolean to show or hide left view.
-**isRightViewHidden** : a boolean to show or hide right
+**rightImage** : image for the right view, add the image\'92s name in the identity inspector..
+**leftImage** : image for the left view, add the image\'92s name in the identity inspector..
+**borderColor** : the colour of the bottom border..
+**isBottomBorder** : a boolean to show or hide bottom border..
+**isLeftViewHidden** : a boolean to show or hide left view..
+**isRightViewHidden** : a boolean to show or hide right..
 
 # Author
 
